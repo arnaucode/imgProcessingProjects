@@ -1,0 +1,10 @@
+{
+  "name": "p5jsTesting",
+  "homepage": "https://github.com/arnaucode/p5jsTesting",
+  "description": "",
+  "license": "MIT",
+  "dependencies": {
+    "tracking": "^1.1.3",
+    "pizzicato": "^0.5.1"
+  }
+}

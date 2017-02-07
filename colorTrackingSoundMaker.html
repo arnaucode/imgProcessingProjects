@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>proves de so</title>
+    <script src="bower_components/tracking/build/tracking-min.js"></script>
+    <script src="bower_components/pizzicato/distr/Pizzicato.js"></script>
+
+
+    <script src="colorTrackingSoundMaker.js"></script>
+    <style>
+        video,
+        canvas {
+            margin-left: 100px;
+            margin-top: 35px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <video id="video" width="600" height="450" preload autoplay loop muted controls></video>
+    <canvas id="canvas" width="600" height="450"></canvas>
+    <button onclick="silence()">silenci</button>
+</body>
+
+</html>

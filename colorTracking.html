@@ -4,25 +4,48 @@
 <head>
     <meta charset="utf-8">
     <title>proves de so</title>
-    <script src="bower_components/tracking/build/tracking-min.js"></script>
-    <script src="bower_components/pizzicato/distr/Pizzicato.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css"  media="screen,projection"/>
 
 
-    <script src="colorTracking.js"></script>
+
+
     <style>
-        video,
-        canvas {
-            margin-left: 100px;
-            margin-top: 35px;
+        .video,
+        .canvas {
+            /*margin-left: 100px;
+            margin-top: 35px;*/
             position: absolute;
         }
     </style>
 </head>
 
 <body>
-    <video id="video" width="600" height="450" preload autoplay loop muted controls></video>
-    <canvas id="canvas" width="600" height="450"></canvas>
-    <button onclick="silence()">silenci</button>
+    <div class="row">
+        <div class="col s6">
+            <video id="video" class="video" width="600" height="450" preload autoplay loop muted controls></video>
+            <canvas id="canvas" class="canvas" width="600" height="450"></canvas>
+            <a class="waves-effect waves-light btn" onclick="silence()"><i class="material-icons left">volume_off</i> silenci</a>
+        </div>
+        <div class="col s6">
+
+        </div>
+    </div>
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="bower_components/materialize/dist/js/materialize.min.js"></script>
+
+    <script src="bower_components/tracking/build/tracking-min.js"></script>
+    <script src="bower_components/pizzicato/distr/Pizzicato.js"></script>
+
+    <script src="colorTracking.js"></script>
 </body>
 
 </html>

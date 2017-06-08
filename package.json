@@ -1,0 +1,20 @@
+{
+  "name": "imgProcessingProjects",
+  "private": true,
+  "version": "0.0.0",
+  "description": "imgprocessing",
+  "repository": "https://github.com/arnaucode/imgProcessingProjects",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "http-server": "^0.9.0"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "prestart": "npm install",
+    "start": "http-server -p 3123 -c-1 ./"
+  },
+  "dependencies": {
+    "bower": "latest"
+  }
+}
